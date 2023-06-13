@@ -42,7 +42,7 @@ class FaqUpdate extends Component
 			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data', 'pesan' => 'Data telah diperbarui', 'tipe' => 'success']);
 			$this->dispatchBrowserEvent('closeEditFaq');
 		} catch (\Illuminate\Database\QueryException $e){
-			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data Gagal', 'pesan' => $e->message, 'tipe' => 'error']);
+			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data Gagal', 'pesan' => "Error Update Data", 'tipe' => 'error']);
 		}
 
 	}

@@ -17,14 +17,15 @@ class KurikulumUpdate extends Component
     protected $rules = [
         'kurikulum.id' => 'required',
         'kurikulum.soal' => 'required',
-        'kurikulum.jawaban' => 'required'
+        // 'kurikulum.jawaban' => 'required',
+		'kurikulum.prodi_id' => 'required'
     ];
 
 	public function setKurikulum($kurikulum){
 		$this->kurikulum = [
 			'id' => $kurikulum['id'],
 			'soal' => $kurikulum['soal'],
-			'prodi' => $kurikulum['prodi_id']
+			'prodi_id' => $kurikulum['prodi_id']
 		];
 		$this->dispatchBrowserEvent('setInitialJawaban', ['jawaban' => $kurikulum['jawaban']]);
 	}
@@ -49,7 +50,7 @@ class KurikulumUpdate extends Component
 			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data', 'pesan' => 'Data telah diperbarui', 'tipe' => 'success']);
 			$this->dispatchBrowserEvent('closeEditKurikulum');
 		} catch (\Illuminate\Database\QueryException $e){
-			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data Gagal', 'pesan' => $e->message, 'tipe' => 'error']);
+			$this->dispatchBrowserEvent('setPesanNotif', ['judul' => 'Update Data Gagal', 'pesan' => "Error Update Data", 'tipe' => 'error']);
 		}
 
 	}

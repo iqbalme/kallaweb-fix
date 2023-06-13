@@ -26,7 +26,7 @@
 							@foreach($data['prodis'] as $prodi)
 								@if($prodi['id'] != 1)
 									<div class="form-check" wire:ignore>
-									<input class="form-check-input" type="radio" value="{{ $prodi['id'] }}" wire:model="kurikulum.prodi">
+									<input class="form-check-input" type="radio" value="{{ $prodi['id'] }}" wire:model="kurikulum.prodi_id">
 									<label class="form-check-label">
 									{{ ucfirst($prodi['nama_prodi'])}}
 									</label>
@@ -56,7 +56,8 @@
 		  removeButtons: 'PasteFromWord'
 		});
 		editor.on('change', function (event) {
-			@this.set('kurikulum.jawaban', event.editor.getData());
+			// @this.set('kurikulum.jawaban', event.editor.getData());
+			window.livewire.emit('setJawabanUpdate', event.editor.getData());
 		});
 		window.addEventListener('setInitialJawaban', event => {
 			CKEDITOR.instances['editor-jawaban-update'].setData(event.detail.jawaban);

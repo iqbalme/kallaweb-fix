@@ -123,7 +123,7 @@
 	window.addEventListener('bukaFormKurikulumEdit', event => {
 		jQuery('#kurikulumModalEdit').modal('show');
 	});
-	const myModalCreate = document.getElementById('faqModal');
+	const myModalCreate = document.getElementById('kurikulumModal');
 	myModalCreate.addEventListener('hidden.coreui.modal', event => {
 	  Livewire.emitTo('kurikulum.kurikulum-create', 'resetKurikulum');
 	});
