@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\PostCategory;
+
+class Category extends Model
+{
+    use HasFactory;
+	
+	protected $table = 'categories';
+	
+	protected $guarded = [];
+	
+	public function post_category(){
+		return $this->hasMany(PostCategory::class);
+	}
+
+}

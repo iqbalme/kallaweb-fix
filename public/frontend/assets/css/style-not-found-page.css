@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  background-color: #fafbfd;
+}
+
+.notfound h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 86px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #151515;
+}
+
+.notfound h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  margin: 0;
+  font-weight: 700;
+  color: #151515;
+}
+
+.notfound a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #18e06f;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.a4teks {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.a4button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-bg {
+      width: 287px;
+      margin: auto;
+    }
+
+    .notfound .notfound-bg > div {
+      height: 85px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound h1 {
+    font-size: 68px;
+  }
+
+  .notfound h2 {
+    font-size: 18px;
+  }
+}
