@@ -25,8 +25,6 @@ class PengaturanTableSeeder extends Seeder
 			['web_keywords' , null],
 			['fb_pixel' , null],
 			['google_analytics' , null],
-			['web_keywords' , null],
-			['web_tag' , null],
 			['xendit_key_public' , null],
 			['xendit_key_secret' , 	'xnd_development_0GDGBB2KvbCsppN8aZu0Mj2HaZk8m21pFFvbKh5Mx9FFRHkOqmfVpDCek51eqquy'],
 			['theme_color_sidebar_bg' , '#404040'],

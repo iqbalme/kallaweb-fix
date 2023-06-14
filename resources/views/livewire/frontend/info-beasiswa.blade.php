@@ -30,9 +30,9 @@
 			padding: 20px 10px;
 		}
 		.beasiswa img {
-			width:90%;
-			/* max-width:100%; */
-			max-width: -webkit-fill-available;
+			width: 100%;
+			max-width: 100%;
+			/* max-width: -webkit-fill-available; */
 		}
 	</style>
 </div>

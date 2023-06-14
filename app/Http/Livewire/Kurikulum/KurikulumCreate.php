@@ -19,7 +19,8 @@ class KurikulumCreate extends Component
 
     protected $rules = [
         'soal' => 'required',
-        'jawaban' => 'required'
+        'jawaban' => 'required',
+		'kurikulum_prodi' => 'required'
     ];
 
     public function render()
@@ -45,6 +46,7 @@ class KurikulumCreate extends Component
 			'jawaban' => $this->jawaban,
 			'prodi_id' => $this->kurikulum_prodi
 		];
+		// dd($kurikulum);
 		Kurikulum::create($kurikulum);
 		$this->resetKurikulum();
 		$this->emitUp('refreshKurikulum');

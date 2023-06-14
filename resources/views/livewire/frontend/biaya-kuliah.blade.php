@@ -30,7 +30,9 @@
 			padding: 20px 10px;
 		}
 		.struktur img {
-			max-width: -webkit-fill-available;
+			width: 100%;
+			max-width: 100%;
+			/* max-width: -webkit-fill-available; */
 		}
 	</style>
 </div>

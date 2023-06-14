@@ -74,7 +74,7 @@
 		margin-top: 8px;
 		font-size: 14px;
 		text-transform: uppercase;
-		color: #c0c1cd;
+		color: #222222;
 	}
 	.event-time .fa {
 		margin-right: 6px;

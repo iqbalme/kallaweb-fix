@@ -63,6 +63,7 @@
 		}
 		.tentang img {
 			max-width: -webkit-fill-available;
+			width:100%;
 		}
 		.blog {
 		  padding: 10px 0 20px 0;

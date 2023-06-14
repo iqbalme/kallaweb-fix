@@ -14,6 +14,6 @@ class Kurikulum extends Model
     protected $guarded = [];
 
     public function kurikulum_prodi(){
-		return $this->belongsTo(Prodi::class, 'id');
+		return $this->belongsTo(Prodi::class, 'prodi_id');
 	}
 }

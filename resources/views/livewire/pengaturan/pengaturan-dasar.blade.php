@@ -231,6 +231,24 @@
 						</div>
 					</div>
 					<div class="row mt-3">
+						<div class="col-lg-6">
+							<div>
+							  <h5 class="card-title mb-0">FB Pixel</h5>
+							</div>
+							<div class="input-group mb-3 mt-2">
+							  <input type="text" class="form-control" wire:model.defer="settings.fb_pixel">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div>
+							  <h5 class="card-title mb-0">Google Analytics</h5>
+							</div>
+							<div class="input-group mb-3 mt-2">
+							  <input type="text" class="form-control" wire:model.defer="settings.google_analytics">
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
 						<div class="d-flex justify-content-between">
 							<div>
 							  <h4 class="card-title mb-0">Deskripsi Website</h4>

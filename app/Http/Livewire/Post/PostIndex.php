@@ -9,7 +9,7 @@ use App\Models\Tag;
 use App\Models\Prodi;
 use App\Models\PostProdis;
 use App\Models\Setting;
-use App\Models\User;
+// use App\Models\User;
 use Livewire\WithPagination;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
@@ -74,7 +74,7 @@ class PostIndex extends Component
         //$this->authorize('view', $posts);
 		$posts_categories = [];
 		$posts_prodis = [];
-		$posts_user = [];
+		// $posts_user = [];
 		// $posts_tags = [];
 		foreach($posts as $post){
 			$categories = [];
